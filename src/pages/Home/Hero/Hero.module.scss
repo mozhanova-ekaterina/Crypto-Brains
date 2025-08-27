@@ -1,0 +1,53 @@
+.inner {
+  padding-top: 161px;
+  padding-bottom: 45px;
+}
+
+.tag {
+  color: var(--primary-9);
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: var(--font-size-xl);
+  font-weight: 600;
+  line-height: 150%;
+  margin-bottom: 20px;
+  &::before {
+    content: "";
+    width: 40px;
+    height: 2px;
+    background-color: var(--primary-9);
+  }
+}
+
+.title {
+  font-size: var(--font-size-7xl);
+  font-weight: 700;
+  margin-bottom: 30px;
+  color: var(--primary-1);
+  letter-spacing: -0.02em;
+  line-height: 120%;
+  max-width: 912px;
+  position: relative;
+}
+
+.divider {
+  height: 1px;
+  width: 547px;
+  background: url("@images/DashedDivider.png") no-repeat center center;
+  position: absolute;
+  right: 170px;
+  bottom: -10px;
+}
+
+.description {
+  font-size: var(--font-size-lg);
+  line-height: 150%;
+  margin-bottom: 80px;
+  max-width: 870px;
+}
+
+.buttons{
+  display: flex;
+  gap: 30px;
+}

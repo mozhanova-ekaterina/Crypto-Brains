@@ -1,0 +1,18 @@
+.wrapper {
+  background: var(--bg-card-bg-2);
+}
+
+.inner {
+  display: grid;
+  gap: 60px;
+  padding: 120px 0;
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 30px;
+  max-width: 1050px;
+  margin: 0 auto;
+}

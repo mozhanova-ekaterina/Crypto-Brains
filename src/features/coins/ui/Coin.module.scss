@@ -1,0 +1,39 @@
+.card {
+  border: 2px solid var(--bg-card-bg-2);
+  border-radius: 10px;
+  padding: 40px 30px;
+  display: grid;
+  gap: 20px;
+  justify-items: center;
+}
+
+.image{
+  width: 48px;
+  height: 48px
+}
+
+.name{
+  display: grid;
+  justify-items: center;
+  gap: 10px;
+}
+
+.price {
+  font-size: var(--font-size-lg);
+  font-weight: 600;
+  line-height: 160%;
+  color: var(--white);
+}
+
+.percentage {
+  display: flex;
+  gap: 6px;
+  align-items: center;
+  font-weight: 600;
+  &.green {
+    color: var(--graph-success-main);
+  }
+  &.red {
+    color: var(--graph-error-main);
+  }
+}

@@ -1,0 +1,15 @@
+.header {
+  background-color: var(--bg-card-bg-2);
+  height: 120px;
+}
+
+.menu {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  & .item {
+    padding: 8px 18px;
+    font-size: var(--font-lg);
+    cursor: pointer;
+  }
+}
