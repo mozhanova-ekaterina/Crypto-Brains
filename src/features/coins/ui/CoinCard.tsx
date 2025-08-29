@@ -20,12 +20,14 @@ export const CoinCard = ({ coin }: { coin: Coin }) => {
 
 const Mini = ({ coin }: { coin: Coin }) => {
   return (
-    <div className={styles.coin}>
+    <div>
       <div className="flex gap-5">
         <div>{coin.symbol.toUpperCase()} / USD</div>
-        <Percentage coin={coin} />
+        <Percentage style={{ fontSize: "14px" }} coin={coin} />
       </div>
-      <div className={styles.price}>$ {coin.current_price}</div>
+      <div className={`${styles.price} ${styles.mini}`}>
+        $ {coin.current_price}
+      </div>
     </div>
   );
 };

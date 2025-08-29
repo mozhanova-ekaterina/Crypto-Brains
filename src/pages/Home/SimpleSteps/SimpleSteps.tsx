@@ -2,6 +2,8 @@ import { SectionTitle } from "@/shared/ui/SectionTitle";
 import styles from "./SimpleSteps.module.scss";
 import { SectionDescription } from "@/shared/ui/SectionDescription";
 import { SectionDivider } from "@/shared/ui/Dividers/SectionDivider";
+import { steps } from "./steps-mocks";
+import { StepCard } from "./StepCard";
 
 export const SimpleSteps = () => {
   return (
@@ -16,6 +18,11 @@ export const SimpleSteps = () => {
           </SectionDescription>
         </div>
         <SectionDivider />
+        <div className={styles.list}>
+          {steps.map((step) => (
+            <StepCard {...step} key={step.title} />
+          ))}
+        </div>
       </section>
     </div>
   );

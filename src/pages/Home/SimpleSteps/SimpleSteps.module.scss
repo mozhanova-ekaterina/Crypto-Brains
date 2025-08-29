@@ -16,3 +16,33 @@
   max-width: 1050px;
   margin: 0 auto;
 }
+
+.list {
+  display: flex;
+  gap: 30px;
+  text-align: center;
+}
+
+.card {
+  border-radius: 10px;
+  padding: 60px 30px;
+  background: var(--bg-card-bg-3);
+  display: grid;
+  gap: 40px;
+  &_icon {
+    margin: 0 auto;
+  }
+  &_title {
+    font-weight: 600;
+    font-size: var(--font-size-xl);
+    line-height: 150%;
+    color: var(--white);
+  }
+  &_link {
+    color: var(--white);
+    display: flex;
+    gap: 8px;
+    align-items: center;
+    justify-content: center;
+  }
+}

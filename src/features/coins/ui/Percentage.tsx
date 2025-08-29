@@ -2,9 +2,16 @@ import clsx from "clsx";
 import styles from "./Coin.module.scss";
 import type { Coin } from "../types";
 
-export const Percentage = ({ coin }: { coin: Coin }) => {
+export const Percentage = ({
+  coin,
+  style,
+}: {
+  coin: Coin;
+  style?: React.CSSProperties;
+}) => {
   return (
     <div
+      style={style}
       className={clsx(
         styles.percentage,
         coin.price_change_percentage_24h > 0 ? styles.green : styles.red
