@@ -1,5 +1,5 @@
 import clsx from "clsx";
-import bg from "@images/Bg.png";
+import bg from "./hero-images/Background.png";
 import computer from "@images/Computer.png";
 
 export const Background = () => {

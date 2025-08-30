@@ -1,7 +1,7 @@
-import image_1 from "@images/steps-icons/1.png";
-import image_2 from "@images/steps-icons/2.png";
-import image_3 from "@images/steps-icons/3.png";
-import image_4 from "@images/steps-icons/4.png";
+import image_1 from "./steps-icons/1.png";
+import image_2 from "./steps-icons/2.png";
+import image_3 from "./steps-icons/3.png";
+import image_4 from "./steps-icons/4.png";
 
 export const steps = [
   {

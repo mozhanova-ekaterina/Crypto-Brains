@@ -1,8 +1,8 @@
 import type { Coin } from "../types";
 import styles from "./Coin.module.scss";
 import { Percentage } from "./Percentage";
-import chartDanger from "@images/ChartDanger.svg";
-import chart from "@images/Chart.svg";
+import chartDanger from "./coin-images/ChartDanger.svg";
+import chart from "./coin-images/Chart.svg";
 
 export const CoinCard = ({ coin }: { coin: Coin }) => {
   return (
@@ -33,6 +33,6 @@ const Mini = ({ coin }: { coin: Coin }) => {
 };
 CoinCard.Mini = Mini;
 
-function Chart({ danger = false }: { danger?: boolean }) {
+const Chart = ({ danger = false }: { danger?: boolean }) => {
   return <img src={danger ? chartDanger : chart} alt="chart-image" />;
-}
+};
