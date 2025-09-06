@@ -1,0 +1,47 @@
+.wrapper {
+  background: url("./whyChoose-images/Bg.png") no-repeat center/cover;
+}
+
+.inner {
+  display: grid;
+  gap: 60px;
+}
+
+.content {
+  display: flex;
+  justify-content: space-between;
+}
+
+.list {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+}
+
+.item {
+  & .content {
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-bottom: 40px;
+  }
+  & .number {
+    font-size: 58px;
+    color: var(--bg-card-bg-3);
+  }
+  & .title {
+    font-weight: 600;
+    font-size: 24px;
+    line-height: 150%;
+  }
+  & .text{
+    margin-top: 12px;
+  }
+  & .link{
+    width: 140px;
+  }
+}
+
+.image{
+  padding: 10px 0;
+}

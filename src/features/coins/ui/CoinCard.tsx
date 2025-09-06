@@ -3,6 +3,7 @@ import styles from "./Coin.module.scss";
 import { Percentage } from "./Percentage";
 import chartDanger from "./coin-images/ChartDanger.svg";
 import chart from "./coin-images/Chart.svg";
+import clsx from "clsx";
 
 export const CoinCard = ({ coin }: { coin: Coin }) => {
   return (
@@ -20,12 +21,12 @@ export const CoinCard = ({ coin }: { coin: Coin }) => {
 
 const Mini = ({ coin }: { coin: Coin }) => {
   return (
-    <div>
-      <div className="flex gap-5">
+    <div className={styles.miniCard}>
+      <div className={styles.name}>
         <div>{coin.symbol.toUpperCase()} / USD</div>
         <Percentage style={{ fontSize: "14px" }} coin={coin} />
       </div>
-      <div className={`${styles.price} ${styles.mini}`}>
+      <div className={clsx(styles.price, styles.mini)}>
         $ {coin.current_price}
       </div>
     </div>

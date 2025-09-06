@@ -3,6 +3,19 @@
   height: 120px;
 }
 
+.inner{
+  display: flex;
+  gap: 40px;
+  align-items: center;
+  justify-content: space-between;
+  height: 100%;
+}
+
+.logo{
+  display: flex;
+  gap: 40px;
+}
+
 .menu {
   display: flex;
   gap: 30px;
@@ -11,5 +24,13 @@
     padding: 8px 18px;
     font-size: var(--font-lg);
     cursor: pointer;
+  }
+}
+
+.actions {
+  display: flex;
+  gap: 10px;
+  & .button {
+    width: 140px;
   }
 }

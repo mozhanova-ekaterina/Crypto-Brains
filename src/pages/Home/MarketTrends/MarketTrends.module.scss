@@ -1,18 +1,28 @@
-.inner{
+.inner {
   display: grid;
   gap: 60px;
 }
-.header{
+.header {
   display: flex;
   justify-content: space-between;
   align-items: center;
 }
-.filters{
+.filters {
   display: flex;
   gap: 30px;
   font-size: var(--font-size-lg);
   line-height: 160%;
-  li{
+  li {
     cursor: pointer;
   }
+}
+.content {
+  display: flex;
+  gap: 30px;
+}
+.action {
+  margin: 0 auto;
+}
+.button {
+  width: 240px;
 }

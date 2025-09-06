@@ -1,0 +1,29 @@
+.button{
+  border-radius: 4px;
+  outline: none;
+  cursor: pointer;
+}
+.default{
+  background: transparent;
+  color: var(--white);
+}
+.primary{
+  background: var(--primary-9);
+  color: var(--white);
+}
+.outline{
+  border: 1px solid var(--white);
+  color: var(--white);
+}
+.sm{
+  font-size: var(--font-size-sm);
+  padding: 8px 16px;
+}
+.md{
+  font-size: var(--font-size-lg);
+  padding: 12px 20px;
+}
+.lg{
+  font-size: var(--font-size-xl);
+  padding: 12px 24px;
+}

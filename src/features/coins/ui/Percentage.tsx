@@ -2,13 +2,12 @@ import clsx from "clsx";
 import styles from "./Coin.module.scss";
 import type { Coin } from "../types";
 
-export const Percentage = ({
-  coin,
-  style,
-}: {
+type Props = {
   coin: Coin;
   style?: React.CSSProperties;
-}) => {
+};
+
+export const Percentage = ({ coin, style }: Props) => {
   return (
     <div
       style={style}

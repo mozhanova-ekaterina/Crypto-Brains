@@ -1,0 +1,18 @@
+.wrapper {
+  background: var(--bg-card-bg-2);
+  padding: 120px 0;
+}
+.inner {
+  display: grid;
+  gap: 60px;
+}
+
+.slider {
+  position: relative;
+
+  .item {
+    background: var(--bg-card-bg-3);
+    border-radius: 10px;
+    padding: 40px 30px;
+  }
+}

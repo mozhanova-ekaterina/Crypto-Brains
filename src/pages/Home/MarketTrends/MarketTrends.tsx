@@ -1,7 +1,7 @@
 import styles from "./MarketTrends.module.scss";
 import type { Filter } from "@/features/coins/types";
 import { CoinCard } from "@/features/coins/ui/CoinCard";
-import { SectionTitle } from "@/shared/ui/SectionTitle";
+import { SectionTitle } from "@/shared/ui/Typography/SectionTitle";
 import { SectionDivider } from "@/shared/ui/Dividers/SectionDivider";
 import { Filters } from "./Filters";
 import { useState } from "react";
@@ -19,13 +19,13 @@ export const MarketTrends = () => {
         <Filters current={filter} handleFilters={(value) => setFilter(value)} />
       </div>
       <SectionDivider />
-      <div className="flex gap-[30px]">
+      <div className={styles.content}>
         {coins.map((coin) => (
           <CoinCard key={coin.id} coin={coin} />
         ))}
       </div>
-      <div className="mx-auto">
-        <Button className="w-[240px]" variant="primary">
+      <div className={styles.action}>
+        <Button className={styles.button} variant="primary">
           See All Market
         </Button>
       </div>

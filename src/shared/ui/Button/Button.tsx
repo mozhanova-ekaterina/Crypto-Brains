@@ -1,37 +1,29 @@
 import clsx from "clsx";
-
-const variants = {
-  primary: "bg-[var(--primary-9)] text-white",
-  default: "bg-transparent text-white",
-  outline: "border border-white text-white",
-};
-
-const sizes = {
-  sm: "text-md py-[8px]",
-  md: "text-xl py-[12px]",
-  lg: "text-2xl py-[12px]",
-};
+import styles from "./Button.module.scss";
 
 type Props = {
   children: React.ReactNode;
-  size?: keyof typeof sizes;
-  variant?: keyof typeof variants;
+  size?: "sm" | "md" | "lg";
+  variant?: "default" | "primary" | "outline";
   className?: string;
+  style?: React.CSSProperties;
 };
 
 export const Button = ({
   children,
   variant = "default",
-  className,
   size = "md",
+  style,
+  ...props
 }: Props) => {
   return (
     <button
+      style={style}
       className={clsx(
-        "rounded cursor-pointer outline-0",
-        className,
-        variants[variant],
-        sizes[size]
+        styles.button,
+        styles[variant],
+        styles[size],
+        props.className
       )}
     >
       {children}

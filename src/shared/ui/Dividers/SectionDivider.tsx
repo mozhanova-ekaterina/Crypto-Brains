@@ -1,14 +1,33 @@
-import clsx from "clsx";
+const variants = {
+  center: {
+    background:
+      "linear-gradient(to right, transparent, var(--grey-paragraph-6), transparent)",
+  },
+  left: {
+    background:
+      "linear-gradient(to right, var(--grey-paragraph-6), transparent)",
+  },
+  right: {
+    background:
+      "linear-gradient(to left, var(--grey-paragraph-6), transparent)",
+  },
+} satisfies Record<string, React.CSSProperties>;
 
-export const SectionDivider = ({ className }: { className?: string }) => {
+type Props = {
+  variant?: keyof typeof variants;
+  className?: string;
+};
+
+export const SectionDivider = ({ variant = "center", ...props }: Props) => {
   return (
     <div
-      className={clsx("h-[1px] w-full", className)}
       style={{
+        height: "1px",
+        width: "100%",
         opacity: 0.4,
-        background:
-          "linear-gradient(to right, transparent, var(--grey-paragraph-6), transparent)",
+        ...variants[variant],
       }}
+      {...props}
     ></div>
   );
 };

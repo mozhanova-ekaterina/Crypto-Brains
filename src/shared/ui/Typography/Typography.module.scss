@@ -1,0 +1,33 @@
+.header {
+  display: flex;
+  gap: 30px;
+  align-items: center;
+  &.row {
+    flex-direction: row;
+  }
+  &.column {
+    flex-direction: column;
+  }
+}
+
+.title {
+  font-size: var(--font-size-4xl);
+  font-weight: 700;
+  color: var(--white);
+}
+
+.description {
+  font-size: var(--font-size-md);
+  line-height: 156%;
+  text-align: center;
+}
+
+.center {
+  text-align: center;
+}
+.left {
+  text-align: left;
+}
+.right {
+  text-align: right;
+}
