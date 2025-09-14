@@ -3,16 +3,61 @@
   padding: 120px 0;
 }
 .inner {
-  display: grid;
+  display: flex;
+  flex-direction: column;
   gap: 60px;
 }
 
 .slider {
-  position: relative;
-
   .item {
     background: var(--bg-card-bg-3);
     border-radius: 10px;
     padding: 40px 30px;
+    .header {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      .user {
+        display: flex;
+        gap: 20px;
+        .avatar {
+          width: 72px;
+          height: 72px;
+        }
+        .info {
+          .name {
+            font-weight: 600;
+            font-size: 20px;
+            line-height: 160%;
+            color: var(--white);
+          }
+          .location {
+            font-size: 14px;
+            line-height: 143%;
+            color: var(--grey-5);
+            margin-top: 2px;
+          }
+        }
+      }
+    }
+    .text {
+      margin-top: 30px;
+      font-size: 24px;
+      line-height: 150%;
+      color: var(--white);
+    }
+  }
+}
+
+.bullet {
+  display: block;
+  width: 30px;
+  height: 4px;
+  background: var(--white);
+  opacity: 0.2;
+  transition: all 0.3s ease;
+  &_active {
+    width: 40px;
+    opacity: 1;
   }
 }
