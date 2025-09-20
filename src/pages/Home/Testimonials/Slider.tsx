@@ -1,5 +1,5 @@
 import { SwiperSlide, Swiper } from "swiper/react";
-import avatar from "./avatar.png";
+import avatar from "./images/avatar.png";
 import "swiper/swiper-bundle.css";
 import styles from "./Testimonials.module.scss";
 import { Quote } from "@/shared/images/icons/Quote";

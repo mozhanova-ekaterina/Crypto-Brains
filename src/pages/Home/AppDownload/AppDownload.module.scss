@@ -1,0 +1,31 @@
+.wrapper {
+  position: relative;
+}
+
+.content {
+  display: grid;
+  gap: 80px;
+  max-width: 780px;
+  padding: 146px 0;
+}
+
+.header {
+  align-items: flex-start !important;
+}
+
+.actions {
+  display: flex;
+  gap: 30px;
+  .button {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+    border-radius: 4px;
+    width: 180px;
+    height: 56px;
+    line-height: 156%;
+    color: var(--white);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+  }
+}

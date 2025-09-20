@@ -16,10 +16,10 @@ export const Hero = () => {
         readable content of a page when looking at its layout.
       </p>
       <div className={styles.buttons}>
-        <Button className="w-[200px]" variant="primary">
+        <Button w="200px" variant="primary">
           Start Now
         </Button>
-        <Button className="w-[200px]" variant="outline">
+        <Button w="200px" variant="outline">
           Beginner’s Guide
         </Button>
       </div>

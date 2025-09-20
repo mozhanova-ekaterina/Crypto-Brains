@@ -15,8 +15,8 @@ export const Header = () => {
         <MenuList />
 
         <div className={styles.actions}>
-          <Button className={styles.button}>Log In</Button>
-          <Button className={styles.button} variant="primary">
+          <Button w="140px">Log In</Button>
+          <Button w="140px" variant="primary">
             Sign Up
           </Button>
         </div>

@@ -3,7 +3,7 @@ import { SectionDivider } from "@/shared/ui/Dividers/SectionDivider";
 import { whyChooseItems } from "./why-choose-mocks";
 import { SectionHeader } from "@/shared/ui/Typography/SectionHeader";
 import { ListItem } from "./ListItem";
-import whuChooseImage from "./whyChoose-images/R19 1.png";
+import whuChooseImage from "./images/R19 1.png";
 
 export const WhyChoose = () => {
   return (

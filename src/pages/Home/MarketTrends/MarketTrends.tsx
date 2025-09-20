@@ -25,7 +25,7 @@ export const MarketTrends = () => {
         ))}
       </div>
       <div className={styles.action}>
-        <Button className={styles.button} variant="primary">
+        <Button w='240px' variant="primary">
           See All Market
         </Button>
       </div>
