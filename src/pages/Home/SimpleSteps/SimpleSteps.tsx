@@ -1,6 +1,6 @@
 import styles from "./SimpleSteps.module.scss";
 import { SectionDivider } from "@/shared/ui/Dividers/SectionDivider";
-import { steps } from "./steps-mocks";
+import { steps } from "./mocks";
 import { StepCard } from "./StepCard";
 import { SectionHeader } from "@/shared/ui/Typography/SectionHeader";
 

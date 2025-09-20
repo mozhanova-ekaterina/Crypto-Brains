@@ -26,17 +26,13 @@ export const Button = ({
   justify = "center",
   w,
   h,
+  className,
   ...props
 }: Partial<Props>) => {
   return (
     <button
       style={{ ...style, justifyContent: justify, width: w, height: h }}
-      className={clsx(
-        styles.button,
-        styles[variant],
-        styles[size],
-        props.className
-      )}
+      className={clsx(styles.button, styles[variant], styles[size], className)}
       {...props}
     >
       {iconL}

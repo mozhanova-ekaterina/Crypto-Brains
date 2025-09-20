@@ -1,4 +1,4 @@
-.header {
+.section_header {
   display: flex;
   gap: 30px;
   align-items: center;
@@ -10,16 +10,19 @@
   }
 }
 
-.title {
-  font-size: var(--font-size-4xl);
-  font-weight: 700;
-  color: var(--white);
-}
-
-.description {
+.section_description {
   font-size: var(--font-size-md);
   line-height: 156%;
   text-align: center;
+}
+
+.title {
+  font-weight: 600;
+  color: var(--white);
+  font-size: var(--font-size-xl);
+  &.section_title {
+    font-size: var(--font-size-4xl);
+  }
 }
 
 .center {

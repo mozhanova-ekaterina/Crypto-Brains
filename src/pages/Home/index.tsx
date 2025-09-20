@@ -6,6 +6,7 @@ import { SimpleSteps } from "./SimpleSteps/SimpleSteps";
 import { WhyChoose } from "./WhyChoose/WhyChoose";
 import { Testimonials } from "./Testimonials/Testimonials";
 import { AppDownload } from "./AppDownload/AppDownload";
+import { FAQ } from "./FAQ/FAQ";
 
 export const Home = () => {
   const { coins } = useGetCoins("all", 7);
@@ -18,8 +19,9 @@ export const Home = () => {
       <MarketTrends />
       <SimpleSteps />
       <WhyChoose />
-      <Testimonials/>
-      <AppDownload/>
+      <Testimonials />
+      <AppDownload />
+      <FAQ />
     </main>
   );
 };

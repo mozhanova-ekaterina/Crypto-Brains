@@ -1,11 +1,12 @@
 import clsx from "clsx";
 import styles from "./Typography.module.scss";
+import { Title } from "./Title";
 
 type Props = {
   children: React.ReactNode;
-  style?: React.CSSProperties;
-  className?: string;
-  align?: "center" | "left" | "right";
+  style: React.CSSProperties;
+  className: string;
+  align: "center" | "left" | "right";
 };
 
 export const SectionTitle = ({
@@ -13,10 +14,13 @@ export const SectionTitle = ({
   style,
   className,
   align = "center",
-}: Props) => {
+}: Partial<Props>) => {
   return (
-    <h2 className={clsx(styles.title, styles[align], className)} style={style}>
+    <Title
+      className={clsx(styles.section_title, styles[align], className)}
+      style={style}
+    >
       {children}
-    </h2>
+    </Title>
   );
 };

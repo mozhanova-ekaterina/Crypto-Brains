@@ -1,6 +1,6 @@
 import clsx from "clsx";
 import bg from "./images/Background.png";
-import computer from "@images/Computer.png";
+import computer from "./images/Computer.png";
 
 export const Background = () => {
   return (

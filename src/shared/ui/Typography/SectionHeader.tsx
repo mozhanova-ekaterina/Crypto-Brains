@@ -22,7 +22,7 @@ export const SectionHeader = ({
   return (
     <div
       className={clsx(
-        styles.header,
+        styles.section_header,
         styles[direction],
         className
       )}

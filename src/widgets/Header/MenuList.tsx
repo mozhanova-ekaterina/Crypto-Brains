@@ -1,5 +1,5 @@
 import styles from "./Header.module.scss";
-import { menuItems } from "./header-mocks";
+import { menuItems } from "./mocks";
 
 export const MenuList = () => {
   return (

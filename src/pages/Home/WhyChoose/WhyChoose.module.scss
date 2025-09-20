@@ -19,29 +19,29 @@
 }
 
 .item {
-  & .content {
+  .content {
     display: flex;
     gap: 20px;
     align-items: center;
     margin-bottom: 40px;
   }
-  & .number {
+  .number {
     font-size: 58px;
     color: var(--bg-card-bg-3);
   }
-  & .title {
+  .title {
     font-weight: 600;
     font-size: 24px;
     line-height: 150%;
   }
-  & .text{
+  .text {
     margin-top: 12px;
   }
-  & .link{
+  .link {
     width: 140px;
   }
 }
 
-.image{
+.image {
   padding: 10px 0;
 }

@@ -16,7 +16,7 @@ export const SectionDescription = ({
 }: Props) => {
   return (
     <div
-      className={clsx(styles.description, styles[align], className)}
+      className={clsx(styles.section_description, styles[align], className)}
       style={style}
     >
       {children}
