@@ -1,7 +1,31 @@
-export const menuItems = {
-  market: "Market",
-  trade: "Trade",
-  earn: "Earn",
-  about: "About",
-  career: "Career",
-};
+type MenuItem = {
+  label: string;
+  path: string;
+}
+
+export const menuItems: MenuItem[] = [
+  {
+    label: "Market",
+    path: "/market",
+  },
+  {
+    label: "Trade",
+    path: "/trade",
+  },
+  {
+    label: "Earn",
+    path: "/earn",
+  },
+  {
+    label: "About",
+    path: "/about",
+  },
+  {
+    label: "Career",
+    path: "/career",
+  },
+]
+
+
+
+
