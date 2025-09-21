@@ -1,8 +1,8 @@
-import { Button } from "../../shared/ui/Button/Button";
-import { Divider } from "../../shared/ui/Dividers/Divider";
 import styles from "./Header.module.scss";
-import { Logo } from "./Logo";
 import { MenuList } from "./MenuList";
+import { Logo } from "@/shared/ui/Logo";
+import { Button } from "@/shared/ui/Button/Button";
+import { Divider } from "@/shared/ui/Dividers/Divider";
 
 export const Header = () => {
   return (

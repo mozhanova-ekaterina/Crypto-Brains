@@ -3,17 +3,17 @@ import styles from "./Button.module.scss";
 import type React from "react";
 
 type Props = {
-  children: React.ReactNode;
-  size: "sm" | "md" | "lg";
-  variant: "default" | "primary" | "outline";
   className: string;
-  style: React.CSSProperties;
+  variant: "default" | "primary" | "outline";
+  size: "sm" | "md" | "lg";
+  onClick: VoidFunction;
+  children: React.ReactNode;
   iconL: React.ReactNode;
   iconR: React.ReactNode;
+  style: React.CSSProperties;
   justify: React.CSSProperties["justifyContent"];
   w: React.CSSProperties["width"];
   h: React.CSSProperties["height"];
-  onClick: VoidFunction;
 };
 
 export const Button = ({

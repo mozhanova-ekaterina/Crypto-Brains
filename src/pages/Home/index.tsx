@@ -7,6 +7,7 @@ import { WhyChoose } from "./WhyChoose/WhyChoose";
 import { Testimonials } from "./Testimonials/Testimonials";
 import { AppDownload } from "./AppDownload/AppDownload";
 import { FAQ } from "./FAQ/FAQ";
+import { Footer } from "@/widgets/Footer/Footer";
 
 export const Home = () => {
   const { coins } = useGetCoins("all", 7);
@@ -22,6 +23,7 @@ export const Home = () => {
       <Testimonials />
       <AppDownload />
       <FAQ />
+      <Footer />
     </main>
   );
 };

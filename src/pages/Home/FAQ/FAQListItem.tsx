@@ -8,11 +8,11 @@ import { useState } from "react";
 export const FAQListItem = ({ item }: { item: FAQ }) => {
   const [open, setOpen] = useState(false);
   return (
-    <li className={styles.item}>
+    <li className={styles.item} onClick={() => setOpen(!open)}>
       <Title className={styles.question}>{item.question}</Title>
       {open && <p className={styles.answer}>{item.answer}</p>}
-      <Button className={styles.openBtn} onClick={() => setOpen(!open)}>
-        <Plus />
+      <Button className={styles.openBtn}>
+        <Plus className={open ? styles.open : ""} />
       </Button>
     </li>
   );
