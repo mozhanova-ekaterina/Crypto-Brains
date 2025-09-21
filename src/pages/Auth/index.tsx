@@ -1,6 +1,9 @@
+import { Outlet } from "react-router";
 
 export const Auth = () => {
   return (
-    <div>Auth</div>
-  )
-}
+    <div>
+      <Outlet />
+    </div>
+  );
+};

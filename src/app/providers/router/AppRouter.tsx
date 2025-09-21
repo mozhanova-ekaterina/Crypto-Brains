@@ -1,11 +1,12 @@
-import { MainLayout } from "@/app/layouts/MainLayout";
 import { ROUTES, type RouteType } from "@/app/route";
 import { Routes, Route } from "react-router";
 
 export const Router = () => {
   const renderRoutes = (routes: RouteType[]) =>
     routes.map((route) => {
-      const Layout = route.layout || MainLayout;
+      const Layout =
+        route.layout ||
+        (({ children }: { children: React.ReactNode }) => <>{children}</>);//выводим пустышку, если рендерим родителя
 
       return (
         <Route
