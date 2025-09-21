@@ -11,3 +11,11 @@ createRoot(document.getElementById("root")!).render(
     </BrowserRouter>
   // </StrictMode>
 );
+
+// app/ → глобальная конфигурация приложения, провайдеры, роутер, лейауты.
+
+// pages/ → страницы.
+
+// widgets/ → переиспользуемые UI-блоки.
+
+// shared/ → утилиты, типы, стили, маленькие UI-компоненты (например, кнопки).
